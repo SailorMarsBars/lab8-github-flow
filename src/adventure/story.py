@@ -44,8 +44,6 @@ def load_events(filename):
         console.print(f"[alert]Error reading file: {e}[/alert]")
         return ["an unknown error occurs"]
 
-default_message = "You stand still, unsure what to do. The forest swallows you."
-
 def step(choice: str, events):
     if not events:
         return "[alert]No events available![/alert]"
@@ -57,11 +55,8 @@ def step(choice: str, events):
     elif choice == "right":
         return right_path(random_event)
     else:
-<<<<<<< HEAD
         return "[alert]You stand still, unsure what to do. The forest swallows you.[/alert]"
-=======
         return default_message
->>>>>>> main
 
 def left_path(event):
     return f"[narrative]You walk left.[/narrative] [event]{event}[/event]"
