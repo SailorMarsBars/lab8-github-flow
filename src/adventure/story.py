@@ -84,3 +84,5 @@ if __name__ == "__main__":
         
         result = step(choice, events)
         console.print(result)
+
+    console.print("\n[bold magenta]👋 Goodbye! Thanks for playing.[/bold magenta]") 
